@@ -1,0 +1,284 @@
+            body{
+            	font-family:Arial;
+            }
+        	.main {
+                margin:20px auto;
+                display:flex;
+                justify-content:start;
+                align-items:center;
+                flex-direction:column;
+                gap:10px;
+                position:relative;
+                width:500px;
+                height:600px;
+                padding:10px 15px;
+                border:2px dashed grey;
+                border-radius:20px;
+            }
+            .section1 {
+            	display:flex;
+                justify-content:start;
+                align-items:center;
+                flex-direction:column;
+                position:relative;
+                width:100%;
+                height:460px;
+                border:5px solid #A9A9A9;
+                background: #EDEDED;
+                border-radius:15px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .section1:hover {
+            	transform: scale(1.007);
+            }
+            .btn-text {
+            	display:flex;
+                justify-content:start;
+                align-items:start;
+                flex-direction:row;
+                gap:10px;
+                transform: translateX(28px);
+            }
+            .btn-text #text {
+            	margin-top:10px;
+            	font-size:20px;
+               	left:10px;
+            }
+            .btn-text #text p {
+            	color: #464646;
+            }
+            .btn-text #text #random-pass {
+            	color: #fd3a4a;
+            }
+            #line {
+            	color: #464646;
+            }
+            #mode-btn {
+            	position:relative;
+                top:15px;
+                left:-35px;
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                background: linear-gradient(to top, black 50%, white 50%);
+                border: 3px solid #A9A9A9;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            #mode-btn:hover {
+            	transform:scale(1.10);
+                box-shadow: 0 0 2px black;
+            }
+            #mode-btn:active {
+            	transform:scale(0.90);
+            }
+            .passRange-toggle {
+            	display:flex;
+                justify-content:space-evenly;
+                align-items:center;
+                flex-direction:row;
+                width:450px;
+                height:120px;
+                gap:30px;
+            }
+            .passRange-toggle .passRange {
+            	display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+                gap:15px;
+                font-size:23px;
+                width:200px;
+                height:120px;
+            }
+            .passRange #slider {
+            	-webkit-appearance: none;
+    			width: 150px;
+    			background: white;
+                border:2px solid grey;
+    			border-radius: 8px;
+    			outline: none;
+        		padding:3px 3px 3px 3px;
+            }
+            .passRange #slider::-webkit-slider-thumb {
+  				-webkit-appearance: none;
+  				height: 20px;
+  				width: 20px;
+  				background: #212121;
+  				cursor: pointer;
+  				border-radius: 20%;
+			}
+            .passRange-toggle .toggle {
+            	display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+                gap:20px;
+                font-size:23px;
+                width:180px;
+                height:120px;
+            }
+            #pass1-btn, #pass2-btn {
+            	position:relative;
+                width:510px;
+                height:60px;
+                border-radius:15px;
+                border:5px solid #A9A9A9;
+                background: #EDEDED;
+                color: #464646;
+                font-size:20px;
+            	transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            #pass1-btn:hover, #pass2-btn:hover {
+            	transform: scale(1.01);
+            }
+            #pass1-btn:active, #pass2-btn:active {
+            	transform: scale(0.98);
+            }
+            #gen-pass{
+            	font-size:22px;
+                margin-top:20px;
+                padding:15px 30px 15px 30px;
+                border-radius:10px;
+                background: white;
+                font-weight:bold;
+                transition: transform 0.3s ease, all 0.3s ease;
+            }
+            #gen-pass:hover {
+            	transform: translateY(-3px);
+                box-shadow: 0 2px 3px grey;
+                background: #212121;
+                color: white;
+            }
+            #gen-pass:active {
+            	transform: translateY(3px);
+                box-shadow: 0 0 5px grey;
+            }
+            
+            
+            
+            .toggle-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            /* Hide default checkbox */
+            .switch input {
+                display: none;
+            }
+
+            /* Toggle background */
+            .switch {
+                position: relative;
+                width: 50px;
+                height: 25px;
+            }
+
+            .slider-toggle {
+                position: absolute;
+                cursor: pointer;
+                background-color: white;
+                border-radius: 8px;
+                border: 2px solid grey;
+                width: 100%;
+                height: 100%;
+                transition: 0.3s;
+            }
+
+            /* Circle */
+            .slider-toggle::before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 3px;
+                top: 2.5px;
+                background-color: #212121;
+                border-radius: 20%;
+                transition: 0.3s;
+            }
+
+            /* When checked */
+            .switch input:checked + .slider-toggle {
+                background-color: darkgrey;
+            }
+
+            .switch input:checked + .slider-toggle::before {
+                transform: translateX(24px);
+            }
+            
+            /* DARK MODE */
+            
+            .dark {
+                background: #121212;
+                color: #EDEDED;
+            }
+
+            .dark .main {
+                border: 2px dashed #444;
+            }
+			.dark #mode-btn {
+            	background: linear-gradient(to top, white 50%, black 50%);
+                border: 3px solid #333;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .dark #mode-btn:hover {
+            	transform:scale(1.10);
+                box-shadow: 0 0 4px white;
+            }
+            .dark #mode-btn:active {
+            	transform:scale(0.90);
+            }
+            .dark .section1 {
+                background: #1E1E1E;
+                border: 5px solid #333;
+            }
+
+            .dark .btn-text #text p, .dark #line {
+                color: #B0B0B0;
+            }
+
+            .dark #random-pass {
+                color: #ff6b6b;
+            }
+
+            .dark #pass1-btn, .dark #pass2-btn {
+                background: #1E1E1E;
+                color: #EDEDED;
+                border: 5px solid #333;
+            }
+
+            .dark #gen-pass {
+                background: #333;
+                color: white;
+            }
+
+            .dark #gen-pass:hover {
+                background: white;
+                color: black;
+            }
+
+            /* Toggle styling in dark */
+            .dark .slider-toggle {
+                background-color: #333;
+                border: 2px solid #555;
+            }
+
+            .dark .slider-toggle::before {
+                background-color: #EDEDED;
+            }
+            .dark .switch input:checked + .slider-toggle {
+            	 background-color: grey;
+            }
+
+            /* Range slider in dark */
+            .dark #slider {
+                background: #333;
+                border: 2px solid #555;
+            }
+
+            .dark #slider::-webkit-slider-thumb {
+                background: #EDEDED;
+            }
+            
+       

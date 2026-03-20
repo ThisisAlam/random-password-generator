@@ -1,0 +1,54 @@
+<html>
+	<head>
+    	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A Random Password Generator built with HTML, CSS and Javescript">
+        <meta name="author" content="Fakhar E Alam">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    	<div class="main">
+        	<div class="section1">
+            	<div class="btn-text">
+                	<div id="text">
+                      <h1>Generate a<br><span id="random-pass">random password</span></h1>
+                      <p>Never use an insecure password again.<br><span id="line">______________________________________</span></p>
+                    </div>
+                    <button id="mode-btn"></button>
+                </div>
+                <div class="passRange-toggle">
+                	<div class="passRange">
+                    	<label>Pasword length:<span id="s-value">14</span></label>
+                        <input id="slider" type="range" min="8" max="20" step="2" value="14">
+                    </div>
+                    <div class="toggle">
+                    	<div class="toggle-item">
+                            <span>Symbols:</span>
+                            <label class="switch">
+                                <input type="checkbox" id="symbols">
+                                <span class="slider-toggle"></span>
+                            </label>
+                        </div>
+
+                        <div class="toggle-item">
+                            <span>Numbers:</span>
+                            <label class="switch">
+                                <input type="checkbox" id="numbers">
+                                <span class="slider-toggle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button id="gen-pass" onclick="genPass()">Generate Password</button>
+            </div>
+            <button id="pass1-btn" onclick="copy1()">---Password---</button>
+            <button id="pass2-btn" onclick="copy2()">---Password---</button>
+        </div>
+    	<script src="node.js"></script>
+    </body>
+</html>
+
+
+
+
+
