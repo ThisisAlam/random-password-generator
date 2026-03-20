@@ -8,7 +8,7 @@ This app allows users to generate secure passwords with full control over length
 
 ## 🚀 Live Demo
 
-👉 https://scoreboard-basketball-alam.netlify.app *(replace with your actual password generator link)*
+👉 Not available yet
 
 ---
 
