@@ -8,7 +8,7 @@ This app allows users to generate secure passwords with full control over length
 
 ## 🚀 Live Demo
 
-👉 Not available yet
+👉 [Live Demo](https://random-password-generator-alam.netlify.app)
 
 ---
 
